@@ -1,9 +1,16 @@
-import Sidebar from "./components/Sidebar";
+import BotonMovil from './components/BotonMovil';
+import Sidebar from './components/Sidebar';
+import { useState } from 'react';
 
 export default function App() {
+	const [sidebar, setSidebar] = useState(false);
+	const handleSidebar = () => {
+		setSidebar(!sidebar);
+	};
 	return (
-		<div className="min-h-screen grid grid-cols-6">
-			<Sidebar />
+		<div className="min-h-screen grid grid-col-1 lg:grid-cols-6">
+			<Sidebar sidebar={sidebar} />
+			<BotonMovil sidebar={sidebar} handleSidebar={handleSidebar}/>
 			<div className="col-span-5">B</div>
 		</div>
 	);
