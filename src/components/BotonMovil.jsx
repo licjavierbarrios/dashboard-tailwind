@@ -5,7 +5,7 @@ const BotonMovil = ({ sidebar, handleSidebar }) => {
 	return (
 		<button
 			onClick={handleSidebar}
-			className="absolute block lg:hidden bottom-4 right-4 bg-purple-600 p-2 text-white rounded-full text-2xl"
+			className="fixed block lg:hidden bottom-4 right-4 bg-purple-600 p-2 text-white rounded-full text-2xl z-40"
 		>
 			{sidebar ? <RiCloseLine /> : <RiMenuFill />}
 		</button>

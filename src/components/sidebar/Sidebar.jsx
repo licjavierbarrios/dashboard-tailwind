@@ -1,11 +1,15 @@
 import React from 'react';
 import Menu from './Menu';
-import Img from '../assets/img/join.svg';
+import Img from '../../assets/img/join.svg';
 import { RiLogoutBoxLine } from 'react-icons/ri';
 
-const Sidebar = ({sidebar}) => {
+const Sidebar = ({ sidebar }) => {
 	return (
-		<div className={`fixed lg:static w-[80%] md:w-[50%] lg:w-full top-0 ${ sidebar ? "-left-0" : "-left-full" } z-50 bg-white h-full w-full overflow-y-auto col-span-1 p-8 border-r transition-all`}>
+		<div
+			className={`fixed lg:static w-[78%] md:w-[50%] lg:w-full top-0 ${
+				sidebar ? '-left-0' : '-left-full'
+			} z-50 bg-white h-full w-full overflow-y-auto col-span-1 p-8 border-r transition-all`}
+		>
 			{/* Logotipo */}
 			<div className="text-center p-6">
 				<h1 className="uppercase font-bold tracking-[4px]">Tu logo</h1>
@@ -36,7 +40,6 @@ const Sidebar = ({sidebar}) => {
 				</div>
 			</div>
 		</div>
-
 	);
 };
 

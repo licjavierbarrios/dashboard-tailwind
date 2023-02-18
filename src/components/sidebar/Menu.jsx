@@ -1,5 +1,5 @@
 import React from 'react';
-import menu from '../helpers/menu-db';
+import menu from '../../helpers/menu-db';
 import ItemMenu from './ItemMenu';
 
 const Menu = () => {
